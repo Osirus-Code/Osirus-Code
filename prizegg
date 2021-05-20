@@ -1,0 +1,67 @@
+【﻿ＰＲＩＺＥ　ＥＧＧ　ＣＯＲＥ】
+
+on load:
+	set {_PrizeEggCORE} to true
+	
+options:
+	reward1: 3 feathers
+	reward2: 5 gold ingot
+	reward3: 2 diamonds
+	reward4: 64 cobblestone
+	reward5: 32 redstone
+	reward6: 3 steak
+	reward7: 3 rotten flesh
+	reward8: 1 iron axe named "&5Butchers Cleaver" with lore "&cLong Live The Butcher|| ||&f&l-> &cButcher I"
+	reward9: 9 iron block
+	reward10: 2 emerald
+	reward11: 3 string
+	reward12: 16 seeds
+	reward13: diamond helmet
+	reward14: diamond chestplate
+	reward15: diamond leggings
+	reward16: diamond boots
+	reward17: chain mail helmet named "&5Kings Guard Helmet" with lore "&7Protect the king||&7Protect the peace|| ||&f&l-> &7Guard II"
+	reward18: chain mail chestplate named "&5Kings Guard chestplate" with lore "&7Protect the king||&7Protect the peace|| ||&f&l-> &7Guard II"
+	reward19: chain mail leggings named "&5Kings Guard leggings" with lore "&7Protect the king||&7Protect the peace|| ||&f&l-> &7Guard II"
+	reward20: chain mail boots named "&5Kings Guard boots" with lore "&7Protect the king||&7Protect the peace|| ||&f&l-> &7Guard II"
+	reward21: 
+	reward22:
+	reward23:
+	reward24:
+	reward25:
+	reward26:
+	reward27:
+	reward28:
+	reward29:
+	reward30:
+	reward31:
+	reward32:
+	reward33:
+	reward34:
+	reward35:
+	reward36:
+	reward37:
+	reward38:
+	reward39:
+	reward40:
+	reward41:
+	reward42:
+	reward43:
+	reward44:
+	reward45:
+	reward46:
+	reward47:
+	reward48:
+	reward49:
+	reward50:
+	
+command /pb use:
+	trigger:
+		player is holding dragon egg named "&aP&cR&bI&eZ&fE &7E&6G&6G" with lore "&7Use /pb use to claim the rewards||&7in side this mythical egg!"
+		remove 1 dragon egg named "&aP&cR&bI&eZ&fE &7E&6G&6G" with lore "&7Use /pb use to claim the rewards||&7in side this mythical egg!" from player
+		launch flickering trailing burst firework colored white at player timed 1
+		set {Reward} to a random integer between 1 and 16
+		open chest with 1 row named "&aP&cR&bI&eZ&fE &7E&6G&6G" to player
+		if (Reward) is 1:
+			format slot 0 of player 
+			
